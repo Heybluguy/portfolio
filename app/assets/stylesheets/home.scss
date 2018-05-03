@@ -1,0 +1,51 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html {
+  background-color: red;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.landing {
+  min-height: 100vh;
+  background-color: red;
+  text-align: center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.text-container > h1 {
+  font-size: 67px;
+}
+
+.text-container > h2 {
+  font-size: 37px;
+}
+
+.project-section {
+  background-color: white;
+  padding: 5vh 0;
+  text-align: center;
+}
+
+.project-list {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.project-list > .project > p > button {
+  background-color: red;
+  padding: 5px;
+}
+
+footer {
+  padding-top: 5vh;
+  text-align: center;
+}
