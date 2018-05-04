@@ -3,7 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 html {
-  background-color: red;
+  background-color: #011F3F;
+  color: #FEF2BF;
 }
 
 a {
@@ -11,9 +12,13 @@ a {
   color: black;
 }
 
+i {
+  color: #FEF2BF
+}
+
 .landing {
   min-height: 100vh;
-  background-color: red;
+  background-color: #011F3F;
   text-align: center;
   display:flex;
   justify-content:center;
@@ -41,7 +46,6 @@ a {
 }
 
 .project-list > .project > p > button {
-  background-color: red;
   padding: 5px;
 }
 
