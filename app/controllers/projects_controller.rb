@@ -1,6 +1,6 @@
 class ProjectsController < ApplicationController
   def index
-    @projects = Project.all
+    @projects = Project.all.order(:id)
   end
 
   def new
@@ -27,16 +27,9 @@ class ProjectsController < ApplicationController
     redirect_to '/projects'
   end
 
-  def destroy
-    @project = Project.find(params[:id])
-    @project.delete
-
-    redirect_to '/projects'
-  end
-
   private
 
   def project_params
-    params.require(:project).permit(:name, :desc, :img, :hosted_url, :github_url)
+    params.require(:project).permit(:name, :desc, :img, :hosted_url, :github_url, :active)
   end
 end

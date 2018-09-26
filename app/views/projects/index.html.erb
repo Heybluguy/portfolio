@@ -1,11 +1,15 @@
 <%= button_to "Add new project", new_project_path, method: :get %>
 
 <table>
-<% @projects.each do |project| %>
-<tr>
-  <td><%= project.name %></td>
-  <td><%= button_to "Edit", edit_project_path(project.id), method: :get %></td>
-  <td><%= button_to "Remove", project_path(project.id), method: :delete %></td>
-</tr>
-<% end %>
+  <tr>
+    <th>Name</th>
+    <th>Active?</th>
+  </tr>
+  <% @projects.each do |project| %>
+  <tr>
+    <td><%= project.name %></td>
+    <td><%= project.active %></td>
+    <td><%= button_to "Edit", edit_project_path(project.id), method: :get %></td>
+  </tr>
+  <% end %>
 </table>
