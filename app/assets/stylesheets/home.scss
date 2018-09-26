@@ -26,11 +26,13 @@ i {
 }
 
 .text-container > h1 {
-  font-size: 67px;
+  font-size: 10vw;
+  line-height: 1em;
 }
 
 .text-container > h2 {
-  font-size: 37px;
+  font-size: 5vw;
+  line-height: 1em;
 }
 
 .project-section {
@@ -71,5 +73,14 @@ footer {
 @media screen and (min-width:900px) {
   .project {
     width: 40%;
+  }
+
+  .text-container > h1 {
+    font-size: 67px;
+    line-height: 1em;
+  }
+
+  .text-container > h2 {
+    font-size: 37px;
   }
 }
