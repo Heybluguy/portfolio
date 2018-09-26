@@ -20,13 +20,13 @@
     <div class="project">
       <h2><%= project.name %></h2>
       <%= image_tag(project.img) %>
-      <p>
+      <p class="desc">
         <%= project.desc %>
       </p>
-      <p>
+      <div class="buttons">
         <button><%= link_to 'Demo', project.hosted_url, target: '_blank' %></button>
         <button><%= link_to 'Repo', project.github_url, target: '_blank' %></button>
-      </p>
+      </div>
     </div>
     <% end %>
   </div>
