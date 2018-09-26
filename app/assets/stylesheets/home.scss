@@ -37,16 +37,27 @@ i {
   background-color: white;
   padding: 5vh 0;
   text-align: center;
+  color: black;
 }
 
 .project-list {
   width: 80%;
   margin: 0 auto;
   text-align: left;
+  display: flex;
 }
 
 .project-list > .project > p > button {
   padding: 5px;
+}
+
+.project {
+  max-width: 45%;
+}
+
+.project > img {
+  max-width: 100%;
+  height: auto;
 }
 
 footer {

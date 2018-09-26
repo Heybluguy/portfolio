@@ -3,7 +3,7 @@
     <h1>Michael Butera</h1>
     <h2>Back End Developer</h2>
     <a href="https://www.github.com/ButeraMV"><i class="fab fa-github-square fa-3x"></i></a>
-    <a href="mailto:buteramv@gmail.com"><i class="fas fa-envelope fa-3x"></i>
+    <a href="mailto:buteramv@gmail.com"><i class="fas fa-envelope fa-3x"></i></a>
   </div>
 </div>
 
@@ -13,12 +13,13 @@
     <% @projects.each do |project| %>
     <div class="project">
       <h2><%= project.name %></h2>
+      <%= image_tag 'got-quote-gen.png' %>
       <p>
         <%= project.desc %>
       </p>
       <p>
-        <button><%= link_to 'Demo', project.hosted_url %></button>
-        <button><%= link_to 'Repo', project.github_url %></button>
+        <button><%= link_to 'Demo', project.hosted_url, target: '_blank' %></button>
+        <button><%= link_to 'Repo', project.github_url, target: '_blank' %></button>
       </p>
     </div>
     <% end %>
@@ -26,8 +27,8 @@
 </div>
 
 <footer>
-  <i class="fab fa-github-square fa-2x"></i>
-  <i class="fas fa-envelope fa-2x"></i>
+  <a href="https://www.github.com/ButeraMV"><i class="fab fa-github-square fa-2x"></i></a>
+  <a href="mailto:buteramv@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
   <p>
     buteramv@gmail.com
   </p>
