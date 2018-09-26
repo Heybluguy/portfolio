@@ -1,0 +1,25 @@
+<%= form_for @project do |f| %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name, autofocus: true %>
+  </div>
+  <div>
+    <%= f.label :desc %>
+    <%= f.text_field :desc, autofocus: true %>
+  </div>
+  <div>
+    <%= f.label :img %>
+    <%= f.text_field :img, autofocus: true %>
+  </div>
+  <div>
+    <%= f.label :hosted_url %>
+    <%= f.text_field :hosted_url, autofocus: true %>
+  </div>
+  <div>
+    <%= f.label :github_url %>
+    <%= f.text_field :github_url, autofocus: true %>
+  </div>
+  <div>
+    <%= f.submit "Create" %>
+  </div>
+<% end %>

@@ -43,8 +43,9 @@ i {
 .project-list {
   width: 80%;
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .project-list > .project > p > button {
@@ -52,15 +53,23 @@ i {
 }
 
 .project {
-  max-width: 45%;
+  width: 80%;
+  margin: 0 auto;
+  display: inline-block;
 }
 
 .project > img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
 footer {
   padding-top: 5vh;
   text-align: center;
+}
+
+@media screen and (min-width:900px) {
+  .project {
+    width: 40%;
+  }
 }
