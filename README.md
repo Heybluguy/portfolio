@@ -1,9 +1,8 @@
 # README
 
-## Heroku Link: [Portfolio](/)
+## Heroku Link: [Portfolio](https://whispering-peak-67820.herokuapp.com/)
 
-A portfolio to demonstrate technical abilities with my recent projects and ways to get ahold of me. This web app was built with Rails, PostgreSQL and Bcrypt for user signup and log in.
-
+A portfolio to demonstrate technical skills used in recent projects and ways to get in contact. This web app was built with Rails, PostgreSQL and Bcrypt for user signup and log in.
 
 ## Prerequisites
 
