@@ -1,24 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Heroku Link: [Portfolio](/)
 
-Things you may want to cover:
+A portfolio to demonstrate technical abilities with my recent projects and ways to get ahold of me. This web app was built with Rails, PostgreSQL and Bcrypt for user signup and log in.
 
-* Ruby version
 
-* System dependencies
+## Prerequisites
 
-* Configuration
+Rails version 5.2.1
 
-* Database creation
+## Launch
 
-* Database initialization
+To launch locally, run the following commands in your terminal:
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+git clone https://github.com/Heybluguy/portfolio.git
+cd portfolio
+bundle
+rails db:create
+rails db:migrate
+rails s
+```
+Open your browser and visit `localhost:3000` and interact with the interface.

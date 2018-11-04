@@ -1,10 +1,12 @@
 <%= button_to "Logout", logout_path, method: :get %>
 <%= button_to "Add new project", new_project_path, method: :get %>
+<%= button_to "Portfolio", root_path, method: :get %>
 
 <table>
   <tr>
     <th>Name</th>
     <th>Active?</th>
+    <th><i class="material-icons">edit</i></th>
   </tr>
   <% @projects.each do |project| %>
   <tr>

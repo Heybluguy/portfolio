@@ -1,18 +1,18 @@
+<% if current_user %>
+  <%= button_to "Logout", logout_path, method: :get %>
+  <%= button_to "Access projects", projects_path, method: :get %>
+<% end %>
+
 <div class="landing">
   <div class="text-container">
-    <h1>Michael Butera</h1>
+    <h1>Luis Senior</h1>
     <h2>Back End Developer</h2>
-    <a href="https://www.github.com/ButeraMV"><i class="fab fa-github-square fa-3x"></i></a>
-    <a href="mailto:buteramv@gmail.com"><i class="fas fa-envelope fa-3x"></i></a>
+    <a href="https://www.github.com/Heybluguy"><i class="fab fa-github-square fa-3x"></i></a>
+    <a href="mailto:luisarturosenior@gmail.com"><i class="fas fa-envelope fa-3x"></i></a>
   </div>
 </div>
 
 <div class="project-section">
-
-  <% if current_user %>
-    <%= button_to "Access projects", projects_path, method: :get %>
-    <%= button_to "Logout", logout_path, method: :get %>
-  <% end %>
 
   <h1>Projects</h1>
   <div class="project-list">
@@ -33,9 +33,9 @@
 </div>
 
 <footer>
-  <a href="https://www.github.com/ButeraMV"><i class="fab fa-github-square fa-2x"></i></a>
-  <a href="mailto:buteramv@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
+  <a href="https://www.github.com/Heybluguy"><i class="fab fa-github-square fa-2x"></i></a>
+  <a href="mailto:luisarturosenior@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
   <p>
-    buteramv@gmail.com
+    luisarturosenior@gmail.com
   </p>
 </footer>

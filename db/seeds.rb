@@ -6,4 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Project.create(name: 'GoT Quote Machine', desc: 'A single page application written with HTML, CSS, and jQuery. It utilizes an API hosted on Heroku to generate a quote to display on the page. The user can then click on the tweet button to be redirected to Twitter with the quote in the body of the tweet.', hosted_url: 'https://buteramv.github.io/quoteMachine/', github_url: 'https://github.com/ButeraMV/quoteMachine')
+Project.create(name: "Milo's Pineapple Shop",
+  desc: "An e-commerce platform built with Ruby on Rails and utilizes Stripe API for payment processing, to buy and sell clothing to or from other users. Upon signing up, a user could post their own new items to sell or view listings from other users. The listing shows the brand, size, title, price, description and image of the item.",
+  hosted_url: "https://lit-chamber-46433.herokuapp.com/",
+  github_url: "https://github.com/Heybluguy/milos_pineapple_shop"
+)
