@@ -14,10 +14,21 @@ a {
 
 i {
   color: #45a049;
+  &:hover,
+  &:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.20em);
+    color: var(--color);
+    transition: 0.25s;
+    border-color: var(--hover);
+    color: green;
+  }
 }
 
-img, button, input {
+img, input {
   &:hover {
+    -webkit-transition: all .15s;
+    transition: all .15s;
     -webkit-box-shadow: 0 1px 6px rgba(57,73,76,0.35);
     box-shadow: 0 1px 6px rgba(57,73,76,0.35);
   }
@@ -74,6 +85,15 @@ img, button, input {
   text-align: center;
   font-size: 2vh;
   background-color: #fff;
+  border: none;
+  -webkit-box-shadow: 0 1px 6px rgba(57,73,76,0.35);
+  box-shadow: 0 1px 6px rgba(57,73,76,0.35);
+  &:hover {
+    -webkit-transition: all .15s;
+    transition: all .15s;
+    -webkit-box-shadow: 0 1px 12px rgba(57,73,76,0.35);
+    box-shadow: 0 1px 12px rgba(57,73,76,0.35);
+  }
 }
 
 .project {
@@ -105,19 +125,25 @@ footer {
     line-height: 1em;
   }
   .project {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     display: inline-block;
   }
 
+  .desc {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
   .buttons > button {
     font-size: 4vw;
-    background-color: #fff;
-    // padding: 0 .5em 0 .5em;
     margin: 0 .5em 0 .5em;
     height: 8vh;
   }
 
+  .project-list {
+    width: 100%;
+  }
   .project-section > h1 {
     font-size: 6vw;
   }
@@ -130,6 +156,7 @@ footer {
   .project > h2 {
     font-size: 6vw;
     line-height: 1.2em;
+    color: #45a049;
   }
 
   .fa-3x {
@@ -158,15 +185,13 @@ footer {
     line-height: 1em;
   }
   .project {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     display: inline-block;
   }
 
   .buttons > button {
     font-size: 4vw;
-    background-color: #fff;
-    // padding: 0 .5em 0 .5em;
     margin: 0 .5em 0 .5em;
     height: 8vh;
     width: 8vh;
@@ -184,6 +209,7 @@ footer {
   .project > h2 {
     font-size: 6vw;
     line-height: 1.2em;
+    color: #45a049;
   }
 
   .fa-3x {
