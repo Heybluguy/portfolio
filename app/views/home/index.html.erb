@@ -18,9 +18,7 @@
   <div class="project-list">
     <% @projects.where(:active => true).each do |project| %>
     <div class="project">
-      <div class="project-name">
-        <h2><%= project.name %></h2>
-      </div>
+      <h2><%= project.name %></h2>
       <%= image_tag(project.img) %>
       <p class="desc">
         <%= project.desc %>
