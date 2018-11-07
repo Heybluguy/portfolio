@@ -3,7 +3,6 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-  padding: 2em;
   line-height: 1.8em;
 }
 
@@ -36,7 +35,7 @@ input[type=submit] {
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
-  margin: 8px 0;
+  margin: 8px -5px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
