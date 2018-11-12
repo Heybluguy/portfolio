@@ -81,15 +81,23 @@ img, input {
   padding: 5vh 0;
   text-align: center;
   color: black;
-  justify-content: center;
   border-radius: .25rem;
   -webkit-box-shadow: 0 1px 6px rgba(57,73,76,0.35);
   box-shadow: 0 1px 6px rgba(57,73,76,0.35);
 }
 
-.skill-section > i {
+.skill-list {
+  display: flex;
+  justify-content: center;
+}
+
+.skill > i {
   color: rgb(155, 153, 153);
   padding: 0 25px;
+}
+
+h5 {
+  margin: 0;
 }
 
 .project-list {
