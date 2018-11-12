@@ -11,11 +11,15 @@
     <a href="mailto:luisarturosenior@gmail.com"><i class="fas fa-envelope fa-3x"></i></a>
     <a href="https://www.linkedin.com/in/luissenior/"><i class="fab fa-linkedin fa-3x"></i></a>
   </div>
+
+  <div class="arrow bounce">
+    <a class="fa fa-arrow-down fa-2x" href="#projects"></a>
+  </div>
 </div>
 
 <div class="project-section">
 
-  <h1>Projects</h1>
+  <a id="projects"><h1>Projects</h1></a>
   <div class="project-list">
     <% @projects.where(:active => true).each do |project| %>
     <div class="project">
