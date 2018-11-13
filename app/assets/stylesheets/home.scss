@@ -94,6 +94,15 @@ img, input {
 .skill > i {
   color: rgb(155, 153, 153);
   padding: 0 25px;
+  &:hover,
+  &:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.20em);
+    color: var(--color);
+    transition: 0.25s;
+    border-color: var(--hover);
+    color: black;
+  }
 }
 
 h5 {
