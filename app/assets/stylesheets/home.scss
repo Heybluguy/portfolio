@@ -94,15 +94,7 @@ img, input {
 .skill > i {
   color: rgb(155, 153, 153);
   padding: 0 25px;
-  &:hover,
-  &:focus {
-    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-    transform: translateY(-0.20em);
-    color: var(--color);
-    transition: 0.25s;
-    border-color: var(--hover);
-    color: black;
-  }
+  font-size: 3em;
 }
 
 h5 {
@@ -159,6 +151,45 @@ footer {
   padding-top: 5vh;
   text-align: center;
 }
+
+
+.devicon-heroku-plain-wordmark:hover{
+  color: #6c63c0;
+  transition: color 0.5s ease;
+}
+.devicon-ruby-plain-wordmark:hover{
+  color: #D91404;
+  transition: color 0.25s ease;
+}
+.devicon-rails-plain-wordmark:hover{
+  color: #A62C46;
+  transition: color 0.5s ease;
+}
+.devicon-mysql-plain-wordmark:hover{
+  color: #00618A;
+  transition: color 0.5s ease;
+}
+.devicon-postgresql-plain-wordmark:hover{
+  color: #336791;
+  transition: color 0.5s ease;
+}
+.devicon-html5-plain-wordmark:hover{
+  color: #E54D26;
+  transition: color 0.5s ease;
+}
+.devicon-css3-plain-wordmark:hover{
+  color: #3D8FC6;
+  transition: color 0.5s ease;
+}
+.devicon-bootstrap-plain-wordmark:hover{
+  color: #59407F;
+  transition: color 0.5s ease;
+}
+.devicon-sass-original:hover{
+  color: #C69;
+  transition: color 0.5s ease;
+}
+
 
 @media screen and (max-device-width: 900px) {
 
