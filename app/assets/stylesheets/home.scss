@@ -66,6 +66,10 @@ img, input {
   }
 }
 
+.arrow.bounce.link {
+  margin: 1.5em;
+}
+
 .text-container > h1 {
   font-size: 67px;
   line-height: 1em;
@@ -77,6 +81,19 @@ img, input {
 
 .project-section, .skill-section{
   margin: 2em;
+  background-color: #fff;
+  padding: 5vh 0;
+  text-align: center;
+  color: black;
+  border-radius: .25rem;
+  -webkit-box-shadow: 0 1px 6px rgba(57,73,76,0.35);
+  box-shadow: 0 1px 6px rgba(57,73,76,0.35);
+}
+
+.resume-section{
+  margin: 2em;
+  margin-left: 15rem;
+  margin-right: 15rem;
   background-color: #fff;
   padding: 5vh 0;
   text-align: center;
