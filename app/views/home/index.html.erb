@@ -1,6 +1,7 @@
 <% if current_user %>
   <%= button_to "Logout", logout_path, method: :get %>
   <%= button_to "Access projects", projects_path, method: :get %>
+  <%= button_to "Access resumes", resumes_path, method: :get %>
 <% end %>
 
 <div class="landing">

@@ -1,0 +1,24 @@
+<% if !flash[:notice].blank? %>
+   <div class = "alert alert-info">
+      <%= flash[:notice] %>
+   </div>
+<% end %>
+<%= button_to "Logout", logout_path, method: :get %>
+<%= button_to "Portfolio", root_path, method: :get %>
+<%= button_to "Add resume", new_resume_path, method: :get %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Download Link</th>
+    <th><i class="material-icons">delete</i></th>
+    <% @resumes.each do |resume| %>
+      <tr>
+        <td><%= resume.name %></td>
+        <td><%= link_to "View Resume", resume.attachment_url %></td>
+        <td><%= button_to "Delete",  resume, method: :delete, class: "btn-danger delete", confirm: "Are you sure that you wish to delete #{resume.name}?" %></td>
+      </tr>
+    <% end %>
+  </tr>
+</table>
+

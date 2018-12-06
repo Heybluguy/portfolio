@@ -1,0 +1,31 @@
+<%= button_to "Logout", logout_path, method: :get %>
+<%= button_to "Portfolio", root_path, method: :get %>
+<%= button_to "Add resume", new_resume_path, method: :get %>
+
+<% if !@resume.errors.empty? %>
+   <div class = "alert alert-error">
+      <ul>
+         <% @resume.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+         <% end %>
+      </ul>
+   </div>
+<% end %>
+
+<div class="form-container">
+  <div class="form">
+    <%= form_for @resume, html: { multipart: true } do |f| %>
+      <div>
+        <%= f.label :name %>
+        <%= f.text_field :name, autofocus: true %>
+      </div>
+      <div>
+        <%= f.label :attachment %>
+        <%= f.file_field :attachment %>
+      </div>
+      <div>
+        <%= f.submit "Save" %>
+      </div>
+    <% end %>
+  </div>
+</div>
