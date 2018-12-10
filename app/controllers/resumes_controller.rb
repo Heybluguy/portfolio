@@ -16,6 +16,17 @@ class ResumesController < ApplicationController
     end
   end
 
+  def edit
+    @resume = Resume.find(params[:id])
+  end
+
+  def update
+    @resume = Resume.find(params[:id])
+    @resume.update(resume_params)
+
+    redirect_to '/resumes'
+  end
+
   def destroy
     @resume = Resume.find(params[:id])
     @resume.destroy
@@ -24,6 +35,6 @@ class ResumesController < ApplicationController
 
   private
     def resume_params
-      params.require(:resume).permit(:name, :attachment)
+      params.require(:resume).permit(:name, :attachment, :active)
     end
 end

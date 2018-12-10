@@ -38,11 +38,11 @@
   </div>
 </div>
 
-<div class="resume-section">
+<!-- <div class="resume-section">
 
   <a id="resume"><h1>Resume</h1></a>
     <div class="resume">
-      <% @resumes.each do |resume| %>
+      <% @resumes.where(:active => true).each do |resume| %>
         <iframe src=<%= resume.attachment_url  %> width="400em" height="580em"> </iframe><br>
          <div class="arrow bounce link">
         <%= link_to "View Resume", resume.attachment_url %>
@@ -50,7 +50,7 @@
       <% end %>
     </div>
 
-</div>
+</div> //-->
 
 <div class="skill-section">
 

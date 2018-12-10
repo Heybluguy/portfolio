@@ -8,6 +8,6 @@ Rails.application.routes.draw do
   get '/login'  => 'sessions#new'
 	post '/login' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
-  resources :resumes, only: [:index, :new, :create, :destroy]
+  resources :resumes
   root "resumes#index"
 end

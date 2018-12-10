@@ -9,13 +9,19 @@
 
 <table>
   <tr>
+    <th></th>
     <th>Name</th>
     <th>Download Link</th>
+    <th>Active?</th>
+    <th><i class="material-icons">edit</i></th>
     <th><i class="material-icons">delete</i></th>
     <% @resumes.each do |resume| %>
       <tr>
+      <td></td>
         <td><%= resume.name %></td>
         <td><%= link_to "View Resume", resume.attachment_url %></td>
+        <td><%= resume.active %></td>
+        <td><%= button_to "Edit", edit_resume_path(resume.id), method: :get %></td>
         <td><%= button_to "Delete",  resume, method: :delete, class: "btn-danger delete", confirm: "Are you sure that you wish to delete #{resume.name}?" %></td>
       </tr>
     <% end %>
