@@ -36,7 +36,7 @@ img, input {
 }
 
 .landing {
-  min-height: 100vh;
+  min-height: 90vh;
   background-color: #f6f7f8;
   text-align: center;
   display: grid;
@@ -46,7 +46,7 @@ img, input {
 
 .arrow {
   text-align: center;
-  margin: 8% 0;
+  margin:0;
 }
 .bounce {
   -moz-animation: bounce 2s infinite;
@@ -169,7 +169,7 @@ footer {
   text-align: center;
 }
 
-
+// color changing skills logos
 .devicon-heroku-plain-wordmark:hover{
   color: #6c63c0;
   transition: color 0.5s ease;
@@ -207,6 +207,50 @@ footer {
   transition: color 0.5s ease;
 }
 
+// name at the top of home page
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+body {
+  background: #f6f7f8;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.container {
+  width: 705px;
+  height: 210px;
+  margin: 0 auto;
+}
+.logo {
+  font-weight: 400;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+  color: #000;
+  font-size: 80px;
+  position: relative;
+  margin: 0;
+}
+
+.word {
+  color: #45a049;
+}
+
+.right, .left {
+  font-family: arial;
+  font-size: 180px;
+  position: relative;
+  top: 32px;
+  color: #45a049;
+  margin: 0 0 0 20px;
+}
+
+.text {
+  font-size: 30px;
+  position: absolute;
+  top: 100px;
+  left: 214px;
+}
+.left {
+  margin: 0 30px 0 0;
+}
 
 @media screen and (max-device-width: 900px) {
 
