@@ -3,6 +3,15 @@ class ResumesController < ApplicationController
     @resumes = Resume.all
   end
 
+  def show
+    respond_to do |format|
+      format.html
+      format.pdf do
+        render pdf: 'resume' # Excluding ".pdf" extension.
+      end
+    end
+  end
+
   def new
     @resume = Resume.new
   end
@@ -10,9 +19,9 @@ class ResumesController < ApplicationController
   def create
     @resume = Resume.new(resume_params)
     if @resume.save
-        redirect_to resumes_path, notice: "The resume #{@resume.name} has been uploaded."
+      redirect_to resumes_path, notice: "The resume #{@resume.name} has been uploaded."
     else
-        render "new"
+      render 'new'
     end
   end
 
@@ -30,11 +39,12 @@ class ResumesController < ApplicationController
   def destroy
     @resume = Resume.find(params[:id])
     @resume.destroy
-    redirect_to resumes_path, notice:  "The resume #{@resume.name} has been deleted."
+    redirect_to resumes_path, notice: "The resume #{@resume.name} has been deleted."
   end
 
   private
-    def resume_params
-      params.require(:resume).permit(:name, :attachment, :active)
-    end
+
+  def resume_params
+    params.require(:resume).permit(:name, :attachment, :active)
+  end
 end

@@ -43,19 +43,23 @@
   </div>
 </div>
 
-<!-- <div class="resume-section">
+<div class="resume-section">
 
   <a id="resume"><h1>Resume</h1></a>
     <div class="resume">
       <% @resumes.where(:active => true).each do |resume| %>
         <iframe src=<%= resume.attachment_url  %> width="400em" height="580em"> </iframe><br>
+
+        <a href=<%= resume.attachment_url  %>>Download the PDF</a>.</p>
          <div class="arrow bounce link">
         <%= link_to "View Resume", resume.attachment_url %>
         </div>
       <% end %>
+
+
     </div>
 
-</div> //-->
+</div>
 
 <div class="skill-section">
 
@@ -64,7 +68,7 @@
       <div class="skill"><i class="devicon-ruby-plain-wordmark" data-toggle="tooltip" title="Ruby"></i></div>
       <div class="skill" ><i class="devicon-rails-plain-wordmark" data-toggle="tooltip" title="RoR"></i></div>
       <div class="skill"><i class="devicon-postgresql-plain-wordmark" data-toggle="tooltip" title="Postgre SQL"></i></i></div>
-      <div class="skill"><i class="devicon-mysql-plain-wordmark" data-toggle="tooltip" title="mySQL"></i></i></div>
+      <!--div class="skill"><i class="devicon-mysql-plain-wordmark" data-toggle="tooltip" title="mySQL"></i></i></div-->
       <div class="skill"><i class="devicon-heroku-plain-wordmark" data-toggle="tooltip" title="Heroku"></i></div>
       <div class="skill"><i class="devicon-html5-plain-wordmark" data-toggle="tooltip" title="HTML 5"></i></div>
       <div class="skill"> <i class="devicon-css3-plain-wordmark" data-toggle="tooltip" title="CSS 3"></i></div>

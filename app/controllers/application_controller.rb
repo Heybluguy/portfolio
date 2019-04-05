@@ -7,8 +7,6 @@ class ApplicationController < ActionController::Base
   end
 
   def authorize
-    if current_user.nil?
-      redirect_to '/'
-    end
+    redirect_to '/' if current_user.nil?
   end
 end
