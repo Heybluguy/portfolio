@@ -28,11 +28,16 @@ i {
 }
 
 img, input {
+  -webkit-transition: all .15s;
+  transition: all .15s;
+  -webkit-box-shadow: 0 1px 6px rgba(57,73,76,0.35);
+  box-shadow: 0 1px 6px rgba(57,73,76,0.35);
+
   &:hover {
     -webkit-transition: all .15s;
     transition: all .15s;
-    -webkit-box-shadow: 0 1px 6px rgba(57,73,76,0.35);
-    box-shadow: 0 1px 6px rgba(57,73,76,0.35);
+    -webkit-box-shadow: 0 20px 26px rgba(57,73,76,0.35);
+    box-shadow: 0 20px 26px rgba(57,73,76,0.35);
   }
 }
 
@@ -234,8 +239,6 @@ body {
 	font-family: 'Lato', Calibri, Arial, sans-serif;
   color: #000;
   font-size: 80px;
-  position: relative;
-  margin: 0;
 }
 
 .word {
@@ -253,9 +256,7 @@ body {
 
 .text {
   font-size: 30px;
-  position: absolute;
-  top: 100px;
-  left: 214px;
+  margin: 75px 200px;
 }
 .left {
   margin: 0 30px 0 0;
